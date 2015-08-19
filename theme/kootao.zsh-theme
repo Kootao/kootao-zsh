@@ -3,8 +3,8 @@
 # It is recommended to use with a dark background and the font Inconsolata.
 # Colors: black, red, green, yellow, *blue, magenta, cyan, and white.
 # 
-# http://ysmood.org/wp/2013/03/my-ys-terminal-theme/
-# Mar 2013 ys
+# https://github.com/Kootao/kootao-zsh 
+# kootao
 
 # Machine name.
 function box_name {
