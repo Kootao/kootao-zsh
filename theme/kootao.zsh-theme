@@ -52,19 +52,6 @@ ys_hg_prompt_info() {
 # Prompt format: \n # USER at MACHINE in DIRECTORY on git:BRANCH STATE [TIME] \n $ 
 PROMPT="
 %{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
-%{$fg[cyan]%}%n \
-%{$fg[white]%}@\
-%{$fg[green]%}$(box_ip) \
-%{$fg[white]%}: \
-%{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
-${hg_info}\
-${git_info} \
-%{$fg[white]%}[%*]
-%{$terminfo[bold]$fg[red]%}$ %{$reset_color%}"
-
-if [[ "$USER" == "root" ]]; then
-PROMPT="
-%{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
 %{$fg[cyan]%}%n\
 %{$fg[white]%}@\
 %{$fg[green]%}$(box_ip) \
@@ -74,4 +61,3 @@ ${hg_info}\
 ${git_info} \
 %{$fg[white]%}[%*]
 %{$terminfo[bold]$fg[red]%}$ %{$reset_color%}"
-fi
