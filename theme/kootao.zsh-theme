@@ -54,8 +54,8 @@ PROMPT="
 %{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
 %{$fg[cyan]%}%n\
 %{$fg[white]%}@\
-%{$fg[green]%}$(box_ip) \
-%{$fg[white]%}: \
+%{$fg[green]%}$(box_ip)\
+%{$fg[white]%}:\
 %{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%}\
 ${hg_info}\
 ${git_info} \
