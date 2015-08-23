@@ -13,7 +13,8 @@ function box_name {
 
 # Machine ip.
 function box_ip {
-	ifconfig|grep "inet addr:"|grep -v "127.0.0.1"|cut -d: -f2 | cut -d' ' -f1
+#	ifconfig|grep "inet addr:"|grep -v "127.0.0.1"|cut -d: -f2 | cut -d' ' -f1
+	ip addr | grep "/24" | cut -d '/' -f 1 | cut -d' ' -f6
 }
 
 # Directory info.
